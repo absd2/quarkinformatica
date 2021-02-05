@@ -23,7 +23,6 @@ body {
 header{
     background-image: url('img/bg1.jpg');
     height: 25%;
-    max-height: 300px;
     text-align: center;
     position: relative;
 }
