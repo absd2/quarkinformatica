@@ -46,6 +46,19 @@ header img {
     padding: 20px;
 }
 
+.content-image {
+    display: inline-block;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.content-image img {
+    max-width: 100%;
+    display: inline-block;
+    text-align: center;
+    border-radius: 20px 0 20px 0;
+}
+
 h1, h2 {
     line-height: 1.2;
 }
@@ -70,10 +83,6 @@ p {
 
 p span {
     font-weight: 600;
-}
-
-#initial-paragraph {
-    margin-bottom: 60px;
 }
 
 .whole-black-card {
@@ -141,7 +150,7 @@ form button {
     }
 
     .content {
-        padding: 10%;
+        padding: 20px 10%;
     }
 
     form button {
@@ -149,17 +158,17 @@ form button {
     }
 
     form {
-        margin-bottom: 50px;
+        margin-bottom: 80px;
     }
 
     form input, form select, form select option, form textarea {
-        max-width: 400px
+        max-width: 400px;
     }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
     .content {
-        padding: 15%;
+        padding: 20px 15%;
     }
 
     h1{ 
@@ -190,12 +199,13 @@ form button {
     
     form textarea {
         font-size: 14px;
+        max-width: 600px;
     }
 }
 
 @media only screen and (min-width: 1024px) {
     .content {
-        padding: 4% 35%;
+        padding: 20px 35%;
     }
 
     h1{ 
