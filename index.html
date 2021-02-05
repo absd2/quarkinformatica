@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/69e2b2839c.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" type="text/css" href="style.css">
         <title>Quark Informática</title>
     </head>
@@ -17,11 +18,12 @@
 
         <div class="content">
             <h1>Assistência técnica pra quem não quer dor de cabeça.</h1>
-            <p id="initial-paragraph">Idealizada por dois estudantes de Engenharia da Computação da Universidade Federal de Pernambuco, a Quark nasceu para ser uma <span class="semibold">assistência técnica remota e inovadora</span>, focada em ofertar um atendimento profissional aliado a um serviço justo, transparente e de alta qualidade técnica.</p>
-
+            <h2>Preço justo e atendimento de excelência. Deixe sua máquina na mão de quem entende do assunto.</h2><br>
             <div class="content-image">
                 <img src="img/twoguys.jpg">
             </div>
+
+            <p>Idealizada por dois estudantes de Engenharia da Computação da Universidade Federal de Pernambuco, a Quark nasceu para ser uma <span class="semibold">assistência técnica remota e inovadora</span>, focada em ofertar um atendimento profissional aliado a um serviço justo, transparente e de alta qualidade técnica.</p>
         </div> 
         <div class="thin-green-line-div"></div>
 
@@ -40,7 +42,7 @@
                         <option>E-mail</option>
                         <option>Chamada telefônica</option>
                     </select><br>
-                    <input id="orcamento-forma-contato-input" placeholder="(81) 9xxxx-xxxx"><br>
+                    <input type="number" id="orcamento-forma-contato-input" placeholder="(81) 9xxxx-xxxx"><br>
 
                     <label>Qual o tipo do seu equipamento?</label><br>
                     <select id="orcamento-tipo-equipamento">
@@ -55,11 +57,100 @@
                 </form>
             </div>
         </div>
-        <div class="thin-green-line-div"></div>
-        <br><br>
+        <div class="thin-green-line-div"></div><br><br>
+        
         <div class="content">
-            <h1>O que dizem nossos clientes?</h1>
-            <p id="initial-paragraph"></p>
+            <h1>Tem alguma dúvida?</h1>
+            <h2>Respondemos aqui embaixo algumas das perguntas mais frequentes.</h2><br>
+
+            <div class="accordion">
+                <div class="accordion-item" id="question1">
+                    <a href="#question1" class="accordion-link">
+                        Quais os serviços que a Quark executa?
+                        <i class="fas fa-chevron-down"></i><i class="fas fa-chevron-up"></i>
+                    </a>
+                    <div class="answer">
+                        <p>Estamos prontos para tirar dúvidas, realizar diagnósticos, manutenções preventivas e corretivas, formatações, trocas de peças, montagens, reparos e outros serviços. Manda uma mensagem pra gente!</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item" id="question2">
+                    <a href="#question2" class="accordion-link">
+                        Quais as formas de pagamento aceitas?
+                        <i class="fas fa-chevron-down"></i><i class="fas fa-chevron-up"></i> 
+                    </a>
+                    <div class="answer">
+                        <p>No momento, aceitamos pagamento em dinheiro, cartões de débito e crédito, transferências bancárias via Pix e PayPal.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item" id="question3">
+                    <a href="#question3" class="accordion-link">
+                        Existe garantia para os serviços?
+                        <i class="fas fa-chevron-down"></i><i class="fas fa-chevron-up"></i> 
+                    </a>
+                    <div class="answer">
+                        <p>Sim! Trabalhamos com a garantia legal de 90 dias.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item" id="question4">
+                    <a href="#question4" class="accordion-link">
+                        Vocês possuem endereço físico?
+                        <i class="fas fa-chevron-down"></i><i class="fas fa-chevron-up"></i> 
+                    </a>
+                    <div class="answer">
+                        <p>Não. Após serem coletados em local previamente combinado, os equipamentos seguem para a manutenção, que é feita na residência dos próprios técnicos.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item" id="question5">
+                    <a href="#question5" class="accordion-link">
+                        Onde será realizada a coleta do meu equipamento?
+                        <i class="fas fa-chevron-down"></i><i class="fas fa-chevron-up"></i> 
+                    </a>
+                    <div class="answer">
+                        <p>Depende. Normalmente, os equipamentos são entregues no Centro de Informática da Universidade Federal de Pernambuco. Mas, ainda sim, é possível combinar um outro local de coleta.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item" id="question6">
+                    <a href="#question6" class="accordion-link">
+                        Ainda me sinto inseguro. Qual a garantia de que receberei meu produto após entregá-lo?
+                        <i class="fas fa-chevron-down"></i><i class="fas fa-chevron-up"></i> 
+                    </a>
+                    <div class="answer">
+                        <p>Pode ficar tranquilo! Nós emitimos nota fiscal, recibos e seguimos as previsões de entrega à risca. Tudo para te dar máxima segurança na hora de deixar sua máquina com a gente!</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item" id="question7">
+                    <a href="#question7" class="accordion-link">
+                        Posso solicitar que o reparo do meu equipamento seja feito na minha casa?
+                        <i class="fas fa-chevron-down"></i><i class="fas fa-chevron-up"></i> 
+                    </a>
+                    <div class="answer">
+                        <p>Dependendo da complexidade do serviço, é possível sim agendar uma visita técnica para que o serviço seja executado na sua casa.</p>
+                    </div>
+                </div>
+            </div>
         </div>
+        
+        <div class="content" id="last-content">
+            <h1>Fala com a gente!</h1>
+
+            <p>
+                <i class="fab fa-whatsapp-square"></i> &nbsp;&nbsp;(81) 99972-9371<br>
+                <i class="fab fa-instagram-square"></i> &nbsp;&nbsp;quark.informatica<br>
+                <i class="fas fa-envelope-square"></i> &nbsp;&nbsp;contato@quarkinformatica.com.br<br>
+            </p>
+        </div>
+
+        <div class="thin-green-line-div"></div>
+        <footer>
+            <div class="content">
+                <p>© Copyright. 2021. Quark Informática.<br>Todos os direitos reservados.</p>
+            </div>
+        </footer>
     </body>
 </html>

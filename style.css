@@ -5,6 +5,7 @@ html {
     height: 100%;
     width: 100%;
     bottom: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -21,7 +22,7 @@ body {
 
 header{
     background-image: url('img/bg1.jpg');
-    height: 20%;
+    height: 25%;
     text-align: center;
     position: relative;
 }
@@ -56,7 +57,7 @@ header img {
     max-width: 100%;
     display: inline-block;
     text-align: center;
-    border-radius: 20px 0 20px 0;
+    border-radius: 0 20px 0 20px;
 }
 
 h1, h2 {
@@ -68,7 +69,6 @@ h1 {
     font-size: 36px;
     margin-bottom: 10px;
 }
-
 
 h2 {
     font-weight: 300;
@@ -144,6 +144,94 @@ form button {
     margin-bottom: 0;
 }
 
+::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+.accordion-item {
+    background: #efefef;
+    border-radius: .4rem;
+    padding: 1rem;
+    margin: 10px 0;
+    text-align: left;
+}
+
+.accordion-link {
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.accordion-link i {
+    margin-left: 15px;
+}
+
+.accordion-link .fa-chevron-up {
+    display: none;
+}
+
+.answer {
+    max-height: 0;
+    overflow: hidden;
+    position: relative;
+    text-align: left;
+    transition: max-height 650ms;
+}
+
+.answer::before {
+    content: "";
+    position: absolute;
+    width: .6rem;
+    height: 90%;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.answer p {
+    font-size: 16px;
+}
+
+.accordion-item:target .answer {
+    max-height: 20rem;
+}
+
+.accordion-item:target .fa-chevron-down {
+    display: none;
+}
+
+.accordion-item:target .fa-chevron-up {
+    display: block;
+}
+
+.accordion {
+    margin-bottom: 30px;
+}
+
+footer{
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+footer .content {
+    padding: 8px;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+#last-content {
+    background-color: #efefef;
+}
 @media only screen and (min-width: 400px) and (max-width: 767px){
     body {
         text-align: center;
@@ -185,7 +273,7 @@ form button {
     }
 
     form label {
-        font-size: 24px;
+        font-size: 22px;
     }
 
     form select, form input {
@@ -219,10 +307,6 @@ form button {
     form input, form select {
         height: 50px;
         max-width: 600px;
-    }
-
-    form label {
-        font-size: 24px;
     }
 
     form select, form input {
