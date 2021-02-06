@@ -20,6 +20,15 @@ body {
     font-weight: 400;
 }
 
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a.bold {
+    font-weight: 600;
+}
+
 header{
     background-image: url('img/bg1.jpg');
     height: 25%;
@@ -142,6 +151,37 @@ form button {
 
 #orcamento-forma-contato {
     margin-bottom: 0;
+}
+
+#quem-somos {
+    text-align: center;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.flex-item {
+    padding: 0 35px;
+}
+
+#quem-somos img {
+    max-height: 100px;
+}
+
+#quem-somos h1 {
+    margin-bottom: 50px;
+}
+
+#quem-somos h2 {
+    margin: 0;
+}
+
+#quem-somos p {
+    font-size: 16px;
+    margin-bottom: 40px;
 }
 
 ::before, ::after {
@@ -293,7 +333,7 @@ footer p {
 
 @media only screen and (min-width: 1024px) {
     .content {
-        padding: 20px 35%;
+        padding: 20px 30%;
     }
 
     h1{ 
@@ -306,6 +346,10 @@ footer p {
 
     form input, form select {
         height: 50px;
+        max-width: 600px;
+    }
+
+    form textarea {
         max-width: 600px;
     }
 
